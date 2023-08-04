@@ -31,7 +31,7 @@
 			position: absolute;
 			width: 100%;
 			height: rem(2);
-			background-color: #000;
+			background-color: var(--gray-800, #424551);
 		}
 
 		&::before {
@@ -123,7 +123,7 @@
 	&__body {
 		@media (max-width:$mobile) {
 			// display: none;
-			background: #44f;
+			background: rgba(255, 90, 48, 1);
 			position: absolute;
 			top: 0;
 			left: 0;
