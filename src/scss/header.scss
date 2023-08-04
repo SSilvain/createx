@@ -1,0 +1,287 @@
+//====================================================================================================
+
+//====================================================================================================
+
+//Burger
+
+.icon-menu {
+	display: none;
+
+	@media (max-width: $mobile) {
+		display: block;
+		position: relative;
+		width: rem(30);
+		height: rem(18);
+		z-index: 5;
+		margin-right: 20px;
+		@media (max-width:$mobileSmall){
+			 margin-right: 0; 
+		}
+
+		@media (any-hover: none) {
+			cursor: default;
+		}
+
+		span,
+		&::before,
+		&::after {
+			content: "";
+			transition: all 0.3s ease 0s;
+			right: 0;
+			position: absolute;
+			width: 100%;
+			height: rem(2);
+			background-color: #000;
+		}
+
+		&::before {
+			top: 0;
+		}
+
+		&::after {
+			bottom: 0;
+		}
+
+		span {
+			top: calc(50% - rem(1));
+		}
+
+		.menu-open & {
+			span {
+				width: 0;
+			}
+
+			&::before,
+			&::after {}
+
+			&::before {
+				top: calc(50% - rem(1));
+				transform: rotate(-45deg);
+			}
+
+			&::after {
+				bottom: calc(50% - rem(1));
+				transform: rotate(45deg);
+			}
+		}
+	}
+}
+
+
+
+.header {
+	// .header__container
+
+	&__container {
+		min-height: 92px;
+		display: flex;
+		gap: 20px;
+		align-items: center;
+
+		@media (max-width:$mobile) {
+		}
+		
+		@media (max-width:$mobileSmall) {
+			// gap: 0;
+		}
+		@media (max-width: em(370)){
+			gap: 5px;
+			  
+		}
+	}
+
+	// .header__logo
+
+	&__logo {
+		width: 130px;
+		height: 20px;
+		margin-right: 60px;
+
+		@media (max-width:$mobile) {
+			margin-right: 5px;
+		}
+	}
+
+	// .header__menu
+
+	&__menu {}
+
+	// .header__contacts
+
+	&__contacts {}
+}
+
+.menu {
+	flex: 1 1 auto;
+
+	// .menu__icon
+
+	&__icon {}
+
+	// .menu__body
+
+	&__body {
+		@media (max-width:$mobile) {
+			// display: none;
+			background: #44f;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			padding: 70px 40px 40px 40px;
+			transform: translateX(-100%);
+			transition: transform .5s ease;
+
+			.menu-open & {
+				transform: translateX(0);
+
+			}
+		}
+	}
+
+	// .menu__list
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0px 40px;
+		// margin-right: 40px;
+		align-items: center;
+		justify-content: flex-start;
+
+		@media (max-width: em(1160)) {
+			gap: 0px 30px;
+
+		}
+
+		@media (max-width: em(794)) {
+			gap: 0px 20px;
+
+		}
+
+		@media (max-width:$mobile) {
+			display: block;
+		}
+	}
+
+	// .menu__item
+
+	&__item {
+		flex: 0 0 auto;
+	}
+
+	// .menu__link
+
+	&__link {
+		color: var(--gray-800, #424551);
+
+		/* base/bold */
+		font-family: Ubuntu;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 160%;
+		/* 25.6px */
+		transition: color .3s ease;
+
+		@media (any-hover: hover) {
+			&:hover {
+				color: rgba(255, 90, 48, 1);
+
+			}
+		}
+
+		@media (max-width:$mobile) {
+			display: block;
+			font-size: 32px;
+			text-align: right;
+		}
+	}
+}
+
+.icon-menu {}
+
+.contacts-header {
+	display: flex;
+	gap: 10px;
+	margin-left: 60px;
+
+	@media (max-width:em(1160)) {
+		margin-left: 10px;
+
+	}
+
+	@media (max-width:$mobileSmall) {}
+
+	// .contacts-header__item
+
+	&__item {
+		display: flex;
+		gap: 10px;
+		align-items: center;
+
+		@media (max-width:$mobileSmall) {
+			gap: 0;
+		}
+	}
+
+	// .contacts-header__ico
+
+	&__ico {
+		width: 40px;
+		height: 40px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	// .contacts-header__body
+
+	&__body {
+		flex: 1 0 auto;
+	}
+
+	// .contacts-header__title
+
+	&__title {
+		// margin-bottom: 5px;
+		color: var(--gray-800, #424551);
+
+		/* small/bold */
+		font-family: Ubuntu;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 150%;
+
+		/* 21px */
+		@media (max-width: em(1160)) {
+			display: none;
+		}
+	}
+
+	// .contacts-header__contact
+
+	&__contact {
+		color: var(--gray-900, #1E212C);
+
+		/* large/regular */
+		font-family: Ubuntu;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 150%;
+
+		/* 27px */
+		@media (max-width: em(1160)) {
+			display: none;
+		}
+
+		@media (any-hover: hover) {
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}

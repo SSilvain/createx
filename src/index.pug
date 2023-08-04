@@ -1,0 +1,38 @@
+meta(charset="UTF-8")
+meta(http-equiv="X-UA-Compatible" content="IE=edge")
+meta(name="viewport" content="width=device-width, initial-scale=1.0")
+title Home Page
+
+.wrapper
+	header.header
+		.header__container
+			img.header__logo(src="@img/logo.svg", alt="logo")
+				
+			.header__menu.menu
+
+				nav.menu__body
+					ul.menu__list
+						- var i = 0
+						while i<5
+							li.menu__item
+								a.menu__link(href="#")= ["About Us","Services","Work","News","Contacts"][i++]
+			.header__contacts.contacts-header
+				.contacts-header__item
+					.contacts-header__ico
+						a(href="tel:4055550128")
+							img(src="@img/contacts-ico-phone.svg", alt="contscts")
+					.contacts-header__body
+						.contacts-header__title Call us
+						a.contacts-header__contact(href="tel:4055550128") (405) 555-0128
+				.contacts-header__item
+					.contacts-header__ico
+						a(href="mailto:hello@createx.com")
+							img(src="@img/contacts-ico-chat.svg", alt="contscts")
+					.contacts-header__body
+						.contacts-header__title Talk to us
+						a.contacts-header__contact(href="mailto:hello@createx.com") hello@createx.com
+			button.menu__icon.icon-menu(type="button")
+				span
+
+	main.page page
+	footer.footer footer
