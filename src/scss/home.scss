@@ -5,6 +5,7 @@
 	// .hero__container
 
 	&__container {
+		max-width: $maxWidthContainer;
 		padding-left: 80px;
 		padding-right: 80px;
 		box-sizing: content-box;
@@ -149,5 +150,124 @@
 .swiper-pagination {}
 
 .swiper-scrollbar {}
+
+//====================================================================================================
+.values {
+
+	// .values__container
+
+	&__container {}
+
+	// .values__title
+
+	&__title {
+		color: var(--gray-900, #1E212C);
+		text-align: center;
+
+		/* h1 */
+		font-family: Ubuntu;
+		font-size: 46px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 130%;
+		/* 59.8px */
+	}
+
+	// .values__sub-title
+
+	&__sub-title {
+		color: var(--gray-700, #787A80);
+		text-align: center;
+
+		/* large/regular */
+		font-family: Ubuntu;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 150%;
+		/* 27px */
+	}
+
+	// .values__body
+
+	&__body {
+		display: flex;
+		// gap: 30px;
+		margin: 40px -94px 0px;
+
+		@media (max-width:$tablet) {
+			display: block;
+			margin: 60px auto 0;
+			max-width: 400px;
+		}
+	}
+
+	// .values__item
+
+	&__item {
+		text-align: center;
+		padding: 0 94px;
+
+		&:not(:last-child) {
+
+			border-width: 1px;
+			border-style: solid;
+			border-image:
+				linear-gradient(to bottom,
+					rgba(218, 219, 221, 0),
+					rgba(218, 219, 221, 1),
+					rgba(218, 219, 221, 0)) 10% 100%;
+			border-left: none;
+		}
+
+		@media (max-width:$tablet) {
+			// border: none;
+			padding: 0;
+			margin-bottom: 60px;
+			&:not(:last-child) {
+
+				border: none;
+			}
+		}
+	}
+
+	// .values__ico
+
+	&__ico {
+		margin-bottom: 20px;
+	}
+
+	// .values__title-item
+
+	&__title-item {
+		color: var(--gray-900, #1E212C);
+		text-align: center;
+
+		/* lead/bold */
+		font-family: Ubuntu;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 150%;
+		/* 30px */
+		margin-bottom: 20px;
+	}
+
+	// .values__text-item
+
+	&__text-item {
+		color: var(--gray-700, #787A80);
+		text-align: center;
+
+		/* base/regular */
+		font-family: Ubuntu;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 160%;
+		/* 25.6px */
+		margin-bottom: 20px;
+	}
+}
 
 //====================================================================================================

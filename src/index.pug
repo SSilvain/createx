@@ -50,4 +50,15 @@ title Home Page
 								button.hero__button(type="button") SUBMIT REQUEST
 					.swiper-pagination
 					.swiper-scrollbar
+		.values
+			.values__container
+				h2.values__title Our core values
+				h3.values__sub-title Our mission is to set the highest standards for construction sphere.
+				.values__body
+					each item, i in ["1", "2", "3"]
+						.values__item
+							img.values__ico(src=["@img/values-ico-1.svg","@img/values-ico-2.svg","@img/values-ico-3.svg",][i])
+							h3.values__title-item= ["Quality","Safety","Comfort"][i]
+							p.values__text-item= ["Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt.","Anim reprehenderit sint voluptate exercitation adipisicing laborum adipisicing. Minim empor est ea.","Sit veniam aute dolore adipisicing nulla sit culpa. Minim mollit voluptate ullamco proident ea ad."][i]
 	footer.footer footer
+.pixelperfect

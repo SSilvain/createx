@@ -1,0 +1,15 @@
+.pixelperfect{
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 1920px;
+	height: 8460px;
+	background: #000;
+	background: url(/src/pixelperfect/home.png) 0 0 no-repeat;
+	z-index: 600000000000000000;
+	opacity: 0.4;
+	pointer-events: none;
+	filter: invert(1);
+}
