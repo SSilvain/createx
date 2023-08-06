@@ -95,7 +95,7 @@
 	&__logo {
 		width: 130px;
 		height: 20px;
-		margin-right: 60px;
+		margin-right: 41px;
 
 		@media (max-width:$mobile) {
 			margin-right: 5px;
@@ -255,6 +255,7 @@
 		font-style: normal;
 		font-weight: 700;
 		line-height: 150%;
+		/* padding-top: 2px; */
 
 		/* 21px */
 		@media (max-width: em(1160)) {
