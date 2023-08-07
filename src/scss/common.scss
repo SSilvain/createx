@@ -37,3 +37,42 @@
 	line-height: 150%;
 	/* 27px */
 }
+
+.container__bottom {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 40px;
+}
+
+.container__bottom-title {
+	color: var(--gray-900, #1E212C);
+
+	/* h3 */
+	font-family: Ubuntu;
+	font-size: 28px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 150%;
+	/* 42px */
+}
+
+.container__bottom-link-button {
+	color: var(--white, #FFF);
+	text-align: center;
+	font-family: Ubuntu;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 52px;
+	/* 325% */
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+	display: flex;
+	padding: 0px 40px;
+	// flex-direction: column;
+	align-items: center;
+
+	border-radius: 4px;
+	background: var(--primary, #FF5A30);
+}

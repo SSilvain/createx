@@ -7,7 +7,8 @@
 // Підключаємо слайдер Swiper з node_modules
 // При необхідності підключаємо додаткові модулі слайдера, вказуючи їх у {} через кому
 // Приклад: { Navigation, Autoplay }
-import Swiper, { Navigation } from 'swiper';
+import Swiper from 'swiper';
+import { Navigation, Pagination } from 'swiper/modules';
 /*
 Основні модулі слайдера:
 Navigation, Pagination, Autoplay, 
@@ -32,7 +33,7 @@ function initSliders() {
 		new Swiper('.swiper', { // Вказуємо склас потрібного слайдера
 			// Підключаємо модулі слайдера
 			// для конкретного випадку
-			modules: [Navigation],
+			modules: [Navigation, Pagination],
 			observer: true,
 			observeParents: true,
 			slidesPerView: 1,
@@ -56,12 +57,15 @@ function initSliders() {
 			*/
 
 			// Пагінація
-			/*
+			
 			pagination: {
 				el: '.swiper-pagination',
 				clickable: true,
+				renderBullet: function (index, className) {
+				  return '<span class="' + className + '">' + (index + 1) + "</span>";
+				},
 			},
-			*/
+			
 
 			// Скроллбар
 			/*
