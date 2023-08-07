@@ -1,0 +1,26 @@
+.icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url(sprite.svg);
+}
+.services-ico-1 {
+  width: 34px;
+  height: 32px;
+  background-position: 0 0;
+}
+.services-ico-2 {
+  width: 33px;
+  height: 32px;
+  background-position: -42px 0;
+}
+.services-ico-3 {
+  width: 33px;
+  height: 32px;
+  background-position: -84px 0;
+}
+.services-ico-4 {
+  width: 29px;
+  height: 32px;
+  background-position: -126px 0;
+}
+

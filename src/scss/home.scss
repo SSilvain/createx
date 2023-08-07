@@ -423,8 +423,12 @@
 		display: grid;
 		gap: 30px;
 		grid-template-columns: repeat(4, 1fr);
+
 		// align-items: center;
 		// justify-items: center;
+		@media (max-width:$mobile) {
+			grid-template-columns: repeat(2, 1fr);
+		}
 	}
 
 	// .services__item
@@ -509,11 +513,19 @@
 		// display: flex;
 		justify-content: center;
 		margin-bottom: 30px;
+
 		// align-items: center;
 		// flex: 1 0 100%;
-		svg{
+		svg {
+			// background: #6af;
+			// position: relative;
+			// z-index: 5;
+			display: inline-block;
 			fill: #FF5A30;
 			transition: all .7s ease;
+			width: 40px;
+			height: 40px;
+
 			@media (any-hover: hover) {
 				.services__item:hover & {
 					fill: #fff;
