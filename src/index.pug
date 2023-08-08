@@ -43,7 +43,7 @@ title Home Page
 						svg
 							use(xlink:href="@img/arrow-slider.svg#arrow-slider")
 			.hero__slider.swiper
-				.hero__wrapper.swiper-wrapper
+				.hero__wrapper.swiper-wrapper-hero.swiper-wrapper
 					.hero__slide.swiper-slide
 						img.hero__img-bg(src="@img/hero-slider/hero-slider-bg-1.jpg" alt="hero slide")
 						.hero__container
@@ -117,15 +117,68 @@ title Home Page
 					a.container__bottom-link-button(href="#") View services
 		.projects
 			.projects__container
-				.projects__slider.swiper-projects
-					.projects__wrapper.swiper-wrapper-projects
-						.projects__slide.swiper-slide-projects
+				.projects__title.container-title.container-title--left Browse our selected projects and learn more about our work
+				.projects__slider-box
+					.projects__slider.swiper-projects
+						.projects__wrapper.swiper-wrapper
+							each item, i in ["Cubes Building","Red Finger Building","The Pencil Building","Red Finger Building","The Pencil Building"]
+								.projects__slide.swiper-slide-projects.swiper-slide
+									.projects__slide-body
+										.projects__slide-wrapper
+											.projects__slide-img-container 
+												img(src=["@img/projects-slider/projects-1.jpg","@img/projects-slider/projects-2.jpg","@img/projects-slider/projects-3.jpg","@img/projects-slider/projects-2.jpg","@img/projects-slider/projects-3.jpg"][i], alt="projects")
+											.projects__slide-content
+												.projects__slide-text-wrapper
+													.projects__slide-title= item
+													.projects__slide-sub-title= ["Business Centers","Business Centers","Stores & Malls","Business Centers","Stores & Malls"][i]
+												.projects__slide-button
+													button(type=button) View Project
 					button.swiper-button-prev-projects(type="button")
 						svg
 							use(xlink:href="@img/arrow-slider.svg#arrow-slider")
-					button.swiper-button-next-projects(type="button") 1
+					button.swiper-button-next-projects(type="button")
 						svg
 							use(xlink:href="@img/arrow-slider.svg#arrow-slider")
-
+				.container__bottom.projects__bottom
+					.container__bottom-title Explore all our works
+					a.container__bottom-link-button(href="#") View portfolio
+		.partners
+			.partners__container
+				h2.container-title.partners__title Supported by 12+ partners
+				.partners__slider.swiper-partners
+					.partners__wrapper.swiper-wrapper
+						.partners__slide.swiper-slide
+							.partners__img-wrapper
+								img.partners__logo-img(src="@img/partners-logos/Franklin-Companies_25-Years1.svg", alt="partners-logo")
+						.partners__slide.swiper-slide
+							.partners__img-wrapper
+								img.partners__logo-img(src="@img/partners-logos/Logo_30_Aniversario.png", alt="partners-logo")
+						.partners__slide.swiper-slide
+							.partners__img-wrapper
+								img.partners__logo-img(src="@img/partners-logos/Nersma+-26+Partners+Mix-CMYK-1920w.webp", alt="partners-logo")
+						.partners__slide.swiper-slide
+							.partners__img-wrapper
+								img.partners__logo-img(src="@img/partners-logos/Prospera_Logo_Dark-300x152.png", alt="partners-logo")
+						.partners__slide.swiper-slide
+							.partners__img-wrapper
+								img.partners__logo-img(src="@img/partners-logos/Rockwood-Capital.svg", alt="partners-logo")
+						.partners__slide.swiper-slide
+							.partners__img-wrapper
+								img.partners__logo-img(src="@img/partners-logos/SAHA-Logo.png", alt="partners-logo")
+						.partners__slide.swiper-slide
+							.partners__img-wrapper
+								img.partners__logo-img.partners__logo-img--bg(src="@img/partners-logos/acgroup-logo-white.svg", alt="partners-logo")
+						.partners__slide.swiper-slide
+							.partners__img-wrapper
+								img.partners__logo-img(src="@img/partners-logos/cpi-logo.png", alt="partners-logo")
+						.partners__slide.swiper-slide
+							.partners__img-wrapper
+								img.partners__logo-img(src="@img/partners-logos/elpasohalogo.png", alt="partners-logo")
+						.partners__slide.swiper-slide
+							.partners__img-wrapper
+								img.partners__logo-img(src="@img/partners-logos/hilti.svg", alt="partners-logo")
+						.partners__slide.swiper-slide
+							.partners__img-wrapper
+								img.partners__logo-img.partners__logo-img--bg(src="@img/partners-logos/saunders_white.svg", alt="partners-logo")
 	footer.footer footer
 .pixelperfect

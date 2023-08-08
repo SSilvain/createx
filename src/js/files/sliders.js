@@ -8,7 +8,7 @@
 // При необхідності підключаємо додаткові модулі слайдера, вказуючи їх у {} через кому
 // Приклад: { Navigation, Autoplay }
 import Swiper from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
+import { Navigation, Pagination, Autoplay, EffectFade } from 'swiper/modules';
 /*
 Основні модулі слайдера:
 Navigation, Pagination, Autoplay, 
@@ -80,6 +80,168 @@ function initSliders() {
 				prevEl: '.swiper-button-prev',
 				nextEl: '.swiper-button-next',
 			},
+			/*
+			// Брейкпоінти
+			breakpoints: {
+				640: {
+					slidesPerView: 1,
+					spaceBetween: 0,
+					autoHeight: true,
+				},
+				768: {
+					slidesPerView: 2,
+					spaceBetween: 20,
+				},
+				992: {
+					slidesPerView: 3,
+					spaceBetween: 20,
+				},
+				1268: {
+					slidesPerView: 4,
+					spaceBetween: 30,
+				},
+			},
+			*/
+			// Події
+			on: {
+
+			}
+		});
+	}
+	// Перевіряємо, чи є слайдер на сторінці
+	if (document.querySelector('.swiper-projects')) { // Вказуємо склас потрібного слайдера
+		// Створюємо слайдер
+		new Swiper('.swiper-projects', { // Вказуємо склас потрібного слайдера
+			// Підключаємо модулі слайдера
+			// для конкретного випадку
+			modules: [Navigation],
+			observer: true,
+			observeParents: true,
+			slidesPerView: 3,
+			spaceBetween: 0,
+			autoHeight: true,
+			speed: 800,
+
+			//touchRatio: 0,
+			//simulateTouch: false,
+			//loop: true,
+			//preloadImages: false,
+			//lazy: true,
+
+			/*
+			// Ефекти
+			effect: 'fade',
+			autoplay: {
+				delay: 3000,
+				disableOnInteraction: false,
+			},
+			*/
+
+			// Пагінація
+			
+			// pagination: {
+			// 	el: '.swiper-pagination-projects',
+			// 	clickable: true,
+			// 	renderBullet: function (index, className) {
+			// 	  return '<span class="' + className + '">' + (index + 1) + "</span>";
+			// 	},
+			// },
+			
+
+			// Скроллбар
+			/*
+			scrollbar: {
+				el: '.swiper-projects-scrollbar',
+				draggable: true,
+			},
+			*/
+
+			// Кнопки "вліво/вправо"
+			navigation: {
+				prevEl: '.swiper-button-prev-projects',
+				nextEl: '.swiper-button-next-projects',
+			},
+			/*
+			// Брейкпоінти
+			breakpoints: {
+				640: {
+					slidesPerView: 1,
+					spaceBetween: 0,
+					autoHeight: true,
+				},
+				768: {
+					slidesPerView: 2,
+					spaceBetween: 20,
+				},
+				992: {
+					slidesPerView: 3,
+					spaceBetween: 20,
+				},
+				1268: {
+					slidesPerView: 4,
+					spaceBetween: 30,
+				},
+			},
+			*/
+			// Події
+			on: {
+
+			}
+		});
+	}
+	// Перевіряємо, чи є слайдер на сторінці
+	if (document.querySelector('.swiper-partners')) { // Вказуємо склас потрібного слайдера
+		// Створюємо слайдер
+		new Swiper('.swiper-partners', { // Вказуємо склас потрібного слайдера
+			// Підключаємо модулі слайдера
+			// для конкретного випадку
+			modules: [Navigation, Autoplay, EffectFade],
+			observer: true,
+			observeParents: true,
+			slidesPerView: 5,
+			spaceBetween: 0,
+			autoHeight: true,
+			speed: 800,
+
+			//touchRatio: 0,
+			//simulateTouch: false,
+			loop: true,
+			//preloadImages: false,
+			//lazy: true,
+
+			
+			// Ефекти
+			// effect: 'fade',
+			autoplay: {
+				delay: 3000,
+				disableOnInteraction: false,
+			},
+			
+
+			// Пагінація
+			
+			// pagination: {
+			// 	el: '.swiper-pagination-projects',
+			// 	clickable: true,
+			// 	renderBullet: function (index, className) {
+			// 	  return '<span class="' + className + '">' + (index + 1) + "</span>";
+			// 	},
+			// },
+			
+
+			// Скроллбар
+			/*
+			scrollbar: {
+				el: '.swiper-projects-scrollbar',
+				draggable: true,
+			},
+			*/
+
+			// Кнопки "вліво/вправо"
+			// navigation: {
+			// 	prevEl: '.swiper-button-prev-projects',
+			// 	nextEl: '.swiper-button-next-projects',
+			// },
 			/*
 			// Брейкпоінти
 			breakpoints: {
