@@ -37,11 +37,11 @@ title Home Page
 	main.page
 		.hero
 			button.swiper-button-prev(type="button")
-						svg
-							use(xlink:href="@img/arrow-slider.svg#arrow-slider")
+				svg
+					use(xlink:href="@img/arrow-slider.svg#arrow-slider")
 			button.swiper-button-next(type="button")
-						svg
-							use(xlink:href="@img/arrow-slider.svg#arrow-slider")
+				svg
+					use(xlink:href="@img/arrow-slider.svg#arrow-slider")
 			.hero__slider.swiper
 				.hero__wrapper.swiper-wrapper-hero.swiper-wrapper
 					.hero__slide.swiper-slide
@@ -149,36 +149,76 @@ title Home Page
 					.partners__wrapper.swiper-wrapper
 						.partners__slide.swiper-slide
 							.partners__img-wrapper
-								img.partners__logo-img(src="@img/partners-logos/Franklin-Companies_25-Years1.svg", alt="partners-logo")
+								img.partners__logo-img(src="@img/partners-logos/Franklin-Companies_25-Years1.svg" alt="partners-logo")
 						.partners__slide.swiper-slide
 							.partners__img-wrapper
-								img.partners__logo-img(src="@img/partners-logos/Logo_30_Aniversario.png", alt="partners-logo")
+								img.partners__logo-img(src="@img/partners-logos/Logo_30_Aniversario.png" alt="partners-logo")
 						.partners__slide.swiper-slide
 							.partners__img-wrapper
-								img.partners__logo-img(src="@img/partners-logos/Nersma+-26+Partners+Mix-CMYK-1920w.webp", alt="partners-logo")
+								img.partners__logo-img(src="@img/partners-logos/Nersma+-26+Partners+Mix-CMYK-1920w.webp" alt="partners-logo")
 						.partners__slide.swiper-slide
 							.partners__img-wrapper
-								img.partners__logo-img(src="@img/partners-logos/Prospera_Logo_Dark-300x152.png", alt="partners-logo")
+								img.partners__logo-img(src="@img/partners-logos/Prospera_Logo_Dark-300x152.png" alt="partners-logo")
 						.partners__slide.swiper-slide
 							.partners__img-wrapper
-								img.partners__logo-img(src="@img/partners-logos/Rockwood-Capital.svg", alt="partners-logo")
+								img.partners__logo-img(src="@img/partners-logos/Rockwood-Capital.svg" alt="partners-logo")
 						.partners__slide.swiper-slide
 							.partners__img-wrapper
-								img.partners__logo-img(src="@img/partners-logos/SAHA-Logo.png", alt="partners-logo")
+								img.partners__logo-img(src="@img/partners-logos/SAHA-Logo.png" alt="partners-logo")
 						.partners__slide.swiper-slide
 							.partners__img-wrapper
-								img.partners__logo-img.partners__logo-img--bg(src="@img/partners-logos/acgroup-logo-white.svg", alt="partners-logo")
+								img.partners__logo-img.partners__logo-img--bg(src="@img/partners-logos/acgroup-logo-white.svg" alt="partners-logo")
 						.partners__slide.swiper-slide
 							.partners__img-wrapper
-								img.partners__logo-img(src="@img/partners-logos/cpi-logo.png", alt="partners-logo")
+								img.partners__logo-img(src="@img/partners-logos/cpi-logo.png" alt="partners-logo")
 						.partners__slide.swiper-slide
 							.partners__img-wrapper
-								img.partners__logo-img(src="@img/partners-logos/elpasohalogo.png", alt="partners-logo")
+								img.partners__logo-img(src="@img/partners-logos/elpasohalogo.png" alt="partners-logo")
 						.partners__slide.swiper-slide
 							.partners__img-wrapper
-								img.partners__logo-img(src="@img/partners-logos/hilti.svg", alt="partners-logo")
+								img.partners__logo-img(src="@img/partners-logos/hilti.svg" alt="partners-logo")
 						.partners__slide.swiper-slide
 							.partners__img-wrapper
-								img.partners__logo-img.partners__logo-img--bg(src="@img/partners-logos/saunders_white.svg", alt="partners-logo")
+								img.partners__logo-img.partners__logo-img--bg(src="@img/partners-logos/saunders_white.svg" alt="partners-logo")
+						//- "@img/partners-logos/Franklin-Companies_25-Years1.svg", "@img/partners-logos/Logo_30_Aniversario.png", "@img/partners-logos/Nersma+-26+Partners+Mix-CMYK-1920w.webp", "@img/partners-logos/Prospera_Logo_Dark-300x152.png", "@img/partners-logos/Rockwood-Capital.svg", "@img/partners-logos/SAHA-Logo.png", "@img/partners-logos/acgroup-logo-white.svg", "@img/partners-logos/cpi-logo.png", "@img/partners-logos/elpasohalogo.png", "@img/partners-logos/hilti.svg", "@img/partners-logos/saunders_white.svg"
+				.partners__feedback
+					.partners__feedback-body
+						.partners__feedback-title What our clients are saying
+						.partners__feedback-slider.swiper-feedback
+							.partners__feedback-wrapper.swiper-wrapper
+								.partners__feedback-slide.swiper-slide
+									.partners__feedback-ava 
+										img(src="@img/ava/ava-1.jpg" alt="avatar")
+									.partners__feedback-text Ipsum aute sunt aliquip aute et occaecat. Anim minim do cillum eiusmod enim. Consectetur magna cillum consequat minim  laboris cillum laboris voluptate minim proident exercitation ullamco. 
+									.partners__feedback-name Shawn Edwards
+									.partners__feedback-position Position, Company name
+								.partners__feedback-slide.swiper-slide
+									.partners__feedback-ava 
+										img(src="@img/ava/ava-2.jpg" alt="avatar")
+									.partners__feedback-text Ipsum aute sunt aliquip aute et occaecat. 
+									.partners__feedback-name Shawn Edwards
+									.partners__feedback-position Position, Company name
+								.partners__feedback-slide.swiper-slide
+									.partners__feedback-ava 
+										img(src="@img/ava/ava-3	.jpg" alt="avatar")
+									.partners__feedback-text Ipsum aute sunt aliquip aute voluptate minim proident exercitation ullamco. 
+									.partners__feedback-name Shawn Edwards
+									.partners__feedback-position Position, Company name
+							button.swiper-button-prev-feedback(type="button")
+								svg
+									use(xlink:href="@img/arrow-slider.svg#arrow-slider")
+							button.swiper-button-next-feedback(type="button")
+								svg
+									use(xlink:href="@img/arrow-slider.svg#arrow-slider")
+					.partners__feedback-img
+						img(src="@img/feedback-bg.jpg" alt="feedback photo")
+		.facts
+			.facts__container
+				h2.container-title.facts__title Some facts and figures
+				.outer-progress
+					.circular-progress
+						span.progress-value
+					span.text HTML&CSS
 	footer.footer footer
 .pixelperfect
+

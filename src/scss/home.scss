@@ -742,13 +742,14 @@
 
 		@media (any-hover: hover) {
 			.projects__slide:hover & {
-				img{
+				img {
 					transform: scale(110%);
-					
+
 				}
 
 			}
 		}
+
 		img {
 			position: absolute;
 			width: 100%;
@@ -875,16 +876,17 @@
 		top: -60px;
 		right: 0;
 		transition: all .3s ease;
-		
+
 		@media (any-hover: hover) {
 			&:hover {
 				background: #FF5A30;
-				svg{
+
+				svg {
 					fill: #fff;
 				}
 			}
 		}
-		
+
 		svg {
 			transition: all .3s ease;
 			width: 18px;
@@ -915,30 +917,39 @@
 
 
 //====================================================================================================
-.partners{
-	
-	&__container{}
-	&__title{}
-	&__slider{
+.partners {
+	background: #ccc;
+	margin: 0 0 140px 0;
+
+	&__container {}
+
+	&__title {}
+
+	&__slider {
 		padding: 40px 0;
 		overflow: hidden;
 		margin: 0 -20px;
 	}
-	.swiper-partners{}
-	&__wrapper{
+
+	.swiper-partners {}
+
+	&__wrapper {
 		display: flex;
 		// max-height: 60px;
 		// gap: 20px;
 	}
-	.swiper-wrapper{}
-	&__slide{
+
+	.swiper-wrapper {}
+
+	&__slide {
 		padding: 0 20px;
 		flex: 0 0 20%;
 		overflow: hidden;
 	}
-	.swiper-slide{
-	}
-	&__img-wrapper{
+
+	.swiper-slide {}
+
+	&__img-wrapper {
 		padding: 0 20px;
 		// height: 100%;
 		height: 120px;
@@ -950,22 +961,277 @@
 		padding: 10px;
 		// box-sizing: content-box;
 	}
-	&__logo-img{
+
+	&__logo-img {
 		height: 100%;
 		width: 100%;
 		object-fit: scale-down;
 		filter: grayscale(1);
 		transition: all .3s ease;
-		&--bg{
+
+		&--bg {
 			background: #000;
 		}
-		@media (any-hover: hover){
-			&:hover{
+
+		@media (any-hover: hover) {
+			&:hover {
 				filter: grayscale(0);
 			}
 		}
 	}
+
+
+	// .partners__feedback
+
+	&__feedback {
+		display: flex;
+		// gap: 140px;
+	}
+
+	// .partners__feedback-body
+
+	&__feedback-body {
+		flex: 1 1 50%;
+		width: 50%;
+		// flex-grow: 1;
+		// flex-shrink: 1;
+		// flex-basis: 50%;
+	}
+
+	// .partners__feedback-title
+
+	&__feedback-title {
+		color: var(--gray-900, #1E212C);
+
+		/* h1 */
+		font-family: Ubuntu;
+		font-size: 46px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 130%;
+		/* 59.8px */
+		margin-bottom: 40px;
+	}
+
+	// .partners__feedback-slider
+
+	&__feedback-slider {
+		position: relative;
+		overflow: hidden;
+	}
+
+	// .partners__feedback-wrapper
+
+	&__feedback-wrapper {
+		display: flex;
+		width: auto;
+	}
+
+	// .partners__feedback-slide
+
+	&__feedback-slide {
+		// width: 100%;
+		flex: 0 0 100%;
+		// flex-shrink: 0;
+		// box-sizing: content-box;
+	}
+
+	// .partners__feedback-img
+
+	&__feedback-img {
+		width: 50%;
+		// flex: 0 0 50%;
+		margin-bottom: -100px;
+		// overflow: hidden;
+		padding-left: 100px;
+
+		img {
+			width: 100%;
+			// height: 100%;
+			// object-fit: contain;
+		}
+	}
+
+	.swiper-feedback {}
+
+	.swiper-button-prev-feedback,
+	.swiper-button-next-feedback {
+		width: 48px;
+		height: 48px;
+		display: flex;
+		border-radius: 50%;
+		background: #fff;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		top: 10px;
+		right: 60;
+		transition: all .3s ease;
+
+		@media (any-hover: hover) {
+			&:hover {
+				background: #FF5A30;
+
+				svg {
+					fill: #fff;
+				}
+			}
+		}
+
+		svg {
+			transition: all .3s ease;
+			width: 18px;
+			height: 12px;
+			fill: rgba(66, 69, 81, 1);
+		}
+	}
+
+	.swiper-button-next-feedback {
+		right: 0px;
+		transform: rotate(180deg);
+	}
+
+	.swiper-button-disabled {
+		opacity: .3;
+	}
+
+
+	.swiper-wrapper {}
+
+	.swiper-slide {}
+
+
+	// .partners__feedback-ava
+
+	&__feedback-ava {
+		border-radius: 50%;
+		overflow: hidden;
+		display: flex;
+		margin-bottom: 20px;
+		width: 72px;
+		height: 72px;
+		align-items: center;
+		justify-content: center;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	// .partners__feedback-text
+
+	&__feedback-text {
+		padding-right: 150px;
+		color: var(--gray-800, #424551);
+
+		/* base/regular */
+		font-family: Ubuntu;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 160%;
+		/* 25.6px */
+		margin-bottom: 20px;
+	}
+
+	// .partners__feedback-name
+
+	&__feedback-name {
+		color: var(--gray-900, #1E212C);
+
+		/* base/bold */
+		font-family: Ubuntu;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 160%;
+		/* 25.6px */
+		margin-bottom: 5px;
+	}
+
+	// .partners__feedback-position
+
+	&__feedback-position {
+		color: var(--gray-700, #787A80);
+
+		/* small/regular */
+		font-family: Ubuntu;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 150%;
+		/* 21px */
+	}
 }
+
+
+
+//====================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+//====================================================================================================
+
+.outer-progress {
+	display: flex;
+	width: 420px;
+	padding: 50px 0;
+	background: #fff;
+	row-gap: 30px;
+	border-radius: 8px;
+	flex-direction: column;
+	align-items: center;
+
+}
+
+.circular-progress {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	background: conic-gradient(#7d2ae8 5deg,
+			#ededed 6deg);
+
+}
+
+.circular-progress::before {
+	content: '';
+	position: absolute;
+	width: 210px;
+	height: 210px;
+	background: #fff;
+	border-radius: 50%;
+
+}
+
+.progress-value {
+	position: relative;
+	font-size: 40px;
+	font-weight: 600;
+	color: #7d2ae8;
+
+}
+
+.text {
+	font-size: 30px;
+	font-weight: 500;
+	color: #555;
+
+}
+
 //====================================================================================================
 
 
@@ -974,6 +1240,24 @@
 
 
 
+
+
 //====================================================================================================
+
+
+//====================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+//====================================================================================================
+
 
 //====================================================================================================
