@@ -215,10 +215,67 @@ title Home Page
 		.facts
 			.facts__container
 				h2.container-title.facts__title Some facts and figures
-				.outer-progress
-					.circular-progress
-						span.progress-value
-					span.text HTML&CSS
+				.progress-wrapper
+					//-цвет задается в js коде
+					.item-progress
+						.circular-progress.circular-progress-1
+							span.progress-value#progress-value-id1 0
+						span.text Totally satisfied clients
+					.item-progress
+						.circular-progress.circular-progress-2
+							span.progress-value#progress-value-id2 0
+						span.text Years of experience
+					.item-progress
+						.circular-progress.circular-progress-3
+							span.progress-value#progress-value-id3 0
+						span.text Working hours spent
+					.item-progress
+						.circular-progress.circular-progress-4
+							span.progress-value#progress-value-id4 0
+						span.text Succeeded projects
+		.news
+			.news__container
+				h2.container-title.news__title Recent news
+				.news__wrapper
+					.news__item-main
+						a.news__img-outer(href="#")
+							.news__item-main-img-ibg
+								img(src="@img/news/news-big.jpg", alt="news")
+							.news__item-title How to Build Climate Change-Resilient Infrastructure
+						.news__item-info
+							a.news__item-tag(href="#") Industry News
+							a.news__item-date(href="#") June 24, 2020
+							a.news__item-comments(href="#") 4 comments
+						.news__item-text Ipsum aliquet nisi, hendrerit rhoncus quam tortor, maecenas faucibus. Tincidunt aliquet sit vel, venenatis nulla. Integer bibendum turpis convallis enim, nibh convallis...
+					.news__item
+						a.news__img-outer(href="#")
+							.news__item-img-ibg(href="#")
+								img(src="@img/news/news-1.jpg", alt="news")
+							.news__item-title How Construction Can Help Itself
+						.news__item-info
+							a.news__item-tag(href="#") Innovation
+							a.news__item-date(href="#") June 12, 2020
+							a.news__item-comments(href="#") No comments
+						.news__item-text Ipsum aliquet nisi, hendrerit rhoncus quam tortor, maecenas faucibus. Tincidunt aliquet sit vel, venenatis nulla. Integer bibendum turpis convallis enim, nibh convallis...
+					.news__item
+						a.news__img-outer(href="#")
+							.news__item-img-ibg(href="#")
+								img(src="@img/news/news-2.jpg", alt="news")
+							.news__item-title Types of Flooring Materials
+						.news__item-info
+							a.news__item-tag(href="#") Company News
+							a.news__item-date(href="#") December 1, 2019
+							a.news__item-comments(href="#") No comments
+						.news__item-text Ipsum aliquet nisi, hendrerit rhoncus quam tortor, maecenas faucibus. Tincidunt aliquet sit vel, venenatis nulla. Integer bibendum turpis convallis enim, nibh convallis...
+				.container__bottom.news__bottom
+					.container__bottom-title Explore all our news posts
+					a.container__bottom-link-button(href="#") View all news
+				.footer-form
+					.footer-form__container
+						form.form(action="#")
+							label.form__label(for="name") Name*
+							input.form__input(type="text", placeholder="Your name", name="name", id="name")
+							input.form__input(type="checkbox", name="check", id="check", value="off")
 	footer.footer footer
 .pixelperfect
 
