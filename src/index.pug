@@ -270,12 +270,42 @@ title Home Page
 				.container__bottom.news__bottom
 					.container__bottom-title Explore all our news posts
 					a.container__bottom-link-button(href="#") View all news
-				.footer-form
-					.footer-form__container
-						form.form(action="#")
+		.footer-form
+			.footer-form__container
+				.form__wrapper 
+					.form__title A quick way to discuss details
+					form.form(action="#")
+						.form__field
 							label.form__label(for="name") Name*
-							input.form__input(type="text", placeholder="Your name", name="name", id="name")
-							input.form__input(type="checkbox", name="check", id="check", value="off")
+							input.form__input(type="text",required, placeholder="Your name", name="name", id="name", autocomplete="off")
+						.form__field
+							label.form__label(for="phone") Phone*
+							input.form__input(type="tel",required, placeholder="Your phone number", name="phone", id="phone")
+						.form__field
+							label.form__label(for="email") Email
+							input.form__input(type="email",required, placeholder="Your working email", name="email", id="email")
+						.form__field
+							label.form__label(for="name") Message*
+							textarea.form__textarea(placeholder="Your message", name="text", id="text")
+						//- input.form__input(type="text", placeholder="Your surname", name="surname", id="surname", disabled)
+						//- input.form__input(type="password", placeholder="Your password", name="password", id="password")
+						//- input.form__input(type="range", placeholder="Your range", name="range", id="range")
+						//- input.form__input(type="file", multiple, accept=".jpg, .png", name="file", id="file")
+						//- input.form__input(type="radio", name="gender", id="gender", value="off")
+						//- span M
+						//- input.form__input(type="radio", name="gender", id="gender", value="off", checked)
+						//- span W
+						//- textarea.form__textarea(name="text") Text
+						//- select(name="select", multiple)
+						//- 	option(value="1") 1
+						//- 	option(value="2") 2
+						//- 	option(value="3", selected) 3
+						//- 	option(value="4") 4
+						.form__field
+							.form__checkbox-wrapper
+								input.form__checkbox(type="checkbox", name="check", id="check", value="off")
+								label.form__checkbox-label(for="check") I agree to receive communications from Createx Construction Bureau.
+						button.form__button(type="submit") send request
 	footer.footer footer
 .pixelperfect
 
