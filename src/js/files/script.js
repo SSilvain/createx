@@ -34,14 +34,14 @@ gsap.registerPlugin(ScrollTrigger);
 // анимация прогрес бара - 2-й вариант
 
 
-function progressBarCircleAnimate(elementCircle = ".circular-progress-1", elementValue = "#progress-value-id1", percentCircle = 76, numberValue = 76 + "%", color = "rgba(248, 152, 40, 1)") {
+function progressBarCircleAnimate(elementCircle = ".circular-progress-1", elementValue = "#progress-value-id1", percentCircle = 76, numberValue = 76 + "%", color = "rgba(248, 152, 40, 1)", userDuration = 2) {
 	gsap.fromTo(elementCircle, { background: `conic-gradient(${color} 0deg, #ededed 0deg)` }, {
 		scrollTrigger: {
 			trigger: elementCircle,
 			start: "bottom bottom",
 		},
 		background: `conic-gradient(${color} ${percentCircle * 3.6}deg, #ededed 0deg)`,
-		duration: 2,
+		duration: userDuration,
 	});
 	//вариант анимации цифр
 	gsap.fromTo(elementValue,
@@ -55,14 +55,14 @@ function progressBarCircleAnimate(elementCircle = ".circular-progress-1", elemen
 			start: "bottom bottom",
 		},
 		textContent: numberValue,
-		duration: 2,
+		duration: userDuration,
 		snap: { textContent: 1 }
 	});
 }
 progressBarCircleAnimate()
-progressBarCircleAnimate(".circular-progress-2", "#progress-value-id2", 90, 20, "rgba(245, 47, 110, 1)")
-progressBarCircleAnimate(".circular-progress-3", "#progress-value-id3", 85, 9452, "rgba(90, 135, 252, 1)")
-progressBarCircleAnimate(".circular-progress-4", "#progress-value-id4", 100, "100%", "rgba(3, 206, 164, 1)")
+progressBarCircleAnimate(".circular-progress-2", "#progress-value-id2", 90, 20, "rgba(245, 47, 110, 1)", 3)
+progressBarCircleAnimate(".circular-progress-3", "#progress-value-id3", 85, 9452, "rgba(90, 135, 252, 1)", 4)
+progressBarCircleAnimate(".circular-progress-4", "#progress-value-id4", 100, "100%", "rgba(3, 206, 164, 1)", 7)
 
 
 

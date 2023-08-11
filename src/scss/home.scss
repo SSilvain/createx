@@ -1610,7 +1610,7 @@
 	opacity: 0;
 	top: 0;
 	left: 0;
-	
+
 
 }
 
@@ -1667,5 +1667,261 @@
 	align-self: center;
 }
 
+
+//====================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//====================================================================================================
+.footer {
+	background: var(--gray-900, #1E212C);
+	// .footer__container
+
+	&__container {}
+
+	// .footer__row
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	// .footer__row--top
+
+	&__row--top {}
+
+	// .footer__left
+
+	&__left {
+		width: 40%;
+	}
+
+	// .footer__middle
+
+	&__middle {
+		width: 20%;
+	}
+
+	// .footer__right
+
+	&__right {
+		width: 40%;
+	}
+
+	&__logo-wrapper {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	// .footer__logo
+
+	&__logo {}
+
+	// .footer__social
+
+	&__social {
+		display: flex;
+		gap: 5px;
+	}
+
+	// .footer__social-item
+
+	&__social-item {}
+
+	// .footer__social-link
+
+	&__social-link {}
+
+	// .footer__text
+
+	&__text {
+		color: var(--white, #FFF);
+
+		/* small/regular */
+		font-family: Ubuntu;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 150%;
+		/* 21px */
+	}
+
+	// .footer__title-subscribe
+
+	&__title-subscribe {
+		color: var(--white, #FFF);
+
+		/* h4 */
+		font-family: Ubuntu;
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 150%;
+		/* 36px */
+	}
+
+	// .footer__form-subscribe
+
+	&__form-subscribe {
+		display: flex;
+		border-radius: 4px;
+		border: 1px solid rgba(255, 255, 255, 0.20);
+		background: rgba(255, 255, 255, 0.12);
+	}
+
+	// .footer__input-subscribe
+
+	&__input-subscribe {
+		flex-grow: 1;
+		background: none;
+		padding: 11px 11px;
+		/* small/regular */
+		font-family: Ubuntu;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 150%;
+
+		/* 21px */
+		&::placeholder {
+
+			color: rgba(#FFF, .6);
+		}
+	}
+
+	// .footer__button-subscribe
+
+	&__button-subscribe {
+		padding: 0 32px;
+		color: var(--white, #FFF);
+		text-align: center;
+		font-family: Ubuntu;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 44px;
+		/* 314.286% */
+		letter-spacing: 0.5px;
+		text-transform: uppercase;
+		border-radius: 0px 4px 4px 0px;
+		background: var(--primary, #FF5A30);
+	}
+
+	// .footer__desc-subscribe
+
+	&__desc-subscribe {
+		color: var(--white, #FFF);
+
+		/* extrasmall/regular */
+		font-family: Ubuntu;
+		font-size: 12px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 150%;
+		/* 18px */
+	}
+
+	// .footer__row--middle
+
+	&__row--middle {}
+
+	// .footer__title
+
+	&__title {
+		color: var(--white, #FFF);
+
+		/* h6 */
+		font-family: Ubuntu;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 150%;
+		/* 24px */
+		letter-spacing: 1px;
+		text-transform: uppercase;
+	}
+
+	// .footer__list
+
+	&__list {}
+
+	// .footer__item
+
+	&__item {
+
+		color: var(--white, #FFF);
+
+		strong {
+			margin-right: 10px;
+		}
+	}
+
+	// .footer__link
+
+	&__link {
+		color: rgba(#FFF, .6);
+
+		/* base/regular */
+		font-family: Ubuntu;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 160%;
+
+		/* 25.6px */
+		@media (any-hover: hover) {
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	// .footer__row--bottom
+
+	&__row--bottom {}
+
+	// .footer__copy
+
+	&__copy {
+		color: var(--white, #FFF);
+
+		/* extrasmall/regular */
+		font-family: Ubuntu;
+		font-size: 12px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 150%;
+		/* 18px */
+	}
+
+	// .footer__go-to-top
+
+	&__go-to-top {
+		color: var(--white, #FFF);
+
+		/* small/regular */
+		font-family: Ubuntu;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 150%;
+		/* 21px */
+	}
+}
 
 //====================================================================================================
