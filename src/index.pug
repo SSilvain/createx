@@ -1,381 +1,385 @@
-meta(charset="UTF-8")
-meta(http-equiv="X-UA-Compatible" content="IE=edge")
-meta(name="viewport" content="width=device-width, initial-scale=1.0")
-title Home Page
+doctype html
+html
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		title Home Page
 
-.wrapper
-	header.header
-		.header__container
-			img.header__logo(src="@img/logo.svg" alt="logo")
+	body
+		.wrapper
+			header.header
+				.header__container
+					img.header__logo(src="@img/logo.svg" alt="logo")
 
-			.header__menu.menu
+					.header__menu.menu
 
-				nav.menu__body
-					ul.menu__list
-						- var i = 0
-						while i<5
-							li.menu__item
-								a.menu__link(href="#")= ["About Us","Services","Work","News","Contacts"][i++]
-			.header__contacts.contacts-header
-				.contacts-header__item
-					.contacts-header__ico
-						a(href="tel:4055550128")
-							img(src="@img/contacts-ico-phone.svg" alt="contscts")
-					.contacts-header__body
-						.contacts-header__title Call us
-						a.contacts-header__contact(href="tel:4055550128") (405) 555-0128
-				.contacts-header__item
-					.contacts-header__ico
-						a(href="mailto:hello@createx.com")
-							img(src="@img/contacts-ico-chat.svg" alt="contscts")
-					.contacts-header__body
-						.contacts-header__title Talk to us
-						a.contacts-header__contact(href="mailto:hello@createx.com") hello@createx.com
-			button.menu__icon.icon-menu(type="button")
-				span
+						nav.menu__body
+							ul.menu__list
+								- var i = 0
+								while i<5
+									li.menu__item
+										a.menu__link(href="#")= ["About Us","Services","Work","News","Contacts"][i++]
+					.header__contacts.contacts-header
+						.contacts-header__item
+							.contacts-header__ico
+								a(href="tel:4055550128")
+									img(src="@img/contacts-ico-phone.svg" alt="contscts")
+							.contacts-header__body
+								.contacts-header__title Call us
+								a.contacts-header__contact(href="tel:4055550128") (405) 555-0128
+						.contacts-header__item
+							.contacts-header__ico
+								a(href="mailto:hello@createx.com")
+									img(src="@img/contacts-ico-chat.svg" alt="contscts")
+							.contacts-header__body
+								.contacts-header__title Talk to us
+								a.contacts-header__contact(href="mailto:hello@createx.com") hello@createx.com
+					button.menu__icon.icon-menu(type="button")
+						span
 
-	main.page
-		.hero
-			button.swiper-button-prev(type="button")
-				svg
-					use(xlink:href="@img/arrow-slider.svg#arrow-slider")
-			button.swiper-button-next(type="button")
-				svg
-					use(xlink:href="@img/arrow-slider.svg#arrow-slider")
-			.hero__slider.swiper
-				.hero__wrapper.swiper-wrapper-hero.swiper-wrapper
-					.hero__slide.swiper-slide
-						img.hero__img-bg(src="@img/hero-slider/hero-slider-bg-1.jpg" alt="hero slide")
-						.hero__container
-							.hero__title CREATE<span>X</span> CONSTRUCTION
-							.hero__sub-title Cras ultrices leo vitae non viverra. Fringilla nisi quisque consequat, dignissim vitae proin ipsum sed. Pellentesque nec turpis purus eget pellentesque integer ipsum elementum felis.
-							.hero__buttons
-								button.hero__button.hero__button-lite(type="button") Learn more about us
-								button.hero__button(type="button") SUBMIT REQUEST
-					.hero__slide.swiper-slide
-						img.hero__img-bg(src="@img/hero-slider/hero-slider-bg-1.jpg" alt="hero slide")
-						.hero__container
-							.hero__title CREATE<span>X</span> CONSTRUCTION
-							.hero__sub-title Cras ultrices leo vitae non viverra. Fringilla nisi quisque consequat, dignissim vitae proin ipsum sed. Pellentesque nec turpis purus eget pellentesque integer ipsum elementum felis.
-							.hero__buttons
-								button.hero__button.hero__button-lite(type="button") Learn more about us
-								button.hero__button(type="button") SUBMIT REQUEST
-					.hero__slide.swiper-slide
-						img.hero__img-bg(src="@img/hero-slider/hero-slider-bg-1.jpg" alt="hero slide")
-						.hero__container
-							.hero__title CREATE<span>X</span> CONSTRUCTION
-							.hero__sub-title Cras ultrices leo vitae non viverra. Fringilla nisi quisque consequat, dignissim vitae proin ipsum sed. Pellentesque nec turpis purus eget pellentesque integer ipsum elementum felis.
-							.hero__buttons
-								button.hero__button.hero__button-lite(type="button") Learn more about us
-								button.hero__button(type="button") SUBMIT REQUEST
-			.hero__container
-				.swiper-pagination
-		.weare
-			.weare__container
-				.container-title.weare__title We are Createx Construction Bureau 
-				.container-sub-title.weare__sub-title We are rightfully considered to be the best construction company in the USA.
-				.weare__video
-					img(src="https://s3-alpha-sig.figma.com/img/8f04/ba49/daf57a9a1ed5a34de19c0db9e25505c6?Expires=1691971200&Signature=NUn5yiNeKDKJLtFb6KMlljZ~PP5Xi0a2odJEBrK~ry6xwZiMry7f4bRffrYc0YP6UeRFmbfqcCRkgdcxpbVfIQpe-T0~mNb4C~CzTFrdYDxecs2kgcS6w3cnqnmCWrXrMisoFVwj~VnTye8m5eNqwHJ2lqbyU86cV3T2A0EDdUw2FRJgOE7RtY~YY~eCcYvGvyPK79UJer5JQs86zW1OZL9lfXh28rZgrcHTd555ULeNHviXglYSNGqhtg7nxijcKf2D8Fy-CkcCGNnbBgs0nk8pX-xywHYcvrs7XRa98jBq1jdQRMSrjNnevu~04jL5usVN1pWsghRbdSbJh0OZhQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4")
-		.values
-			.values__container
-				h2.container-title.values__title Our core values
-				h3.container-sub-title.values__sub-title Our mission is to set the highest standards for construction sphere.
-				.values__body
-					each item, i in ["1", "2", "3"]
-						.values__item
-							img.values__ico(src=["@img/values-ico-1.svg","@img/values-ico-2.svg","@img/values-ico-3.svg",][i])
-							h3.values__title-item= ["Quality","Safety","Comfort"][i]
-							p.values__text-item= ["Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt.","Anim reprehenderit sint voluptate exercitation adipisicing laborum adipisicing. Minim empor est ea.","Sit veniam aute dolore adipisicing nulla sit culpa. Minim mollit voluptate ullamco proident ea ad."][i]
-			.values__container--wrapper-form
-				h3.ineer-title.values__inner-title Want to know more? Ask us a question:
-				form.values__form
-					.values__item-form
-						label.values__label Name
-						input.values__input(type=text, placeholder="Your name")
-					.values__item-form
-						label.values__label Phone
-						input.values__input(type=tel, placeholder="Your phone")
-					.values__item-form
-						label.values__label Message
-						input.values__input(type=message, placeholder="Your message")
-					.values__item-form
-						button.values__button(type="submit") Send
-		.services
-			.services__container
-				h2.container-title.services__title Our services
-				h3.container-sub-title.services__sub-title Createx Construction Bureau is a construction giant with a full range of construction services.
-				.services__wrapper
-					each item, i in ["Construction","Project Development","Interior Design","Repairs"]
-						.services__item
-							.services__item-body
-								.services__item-ico
-									svg
-										use(xlink:href=`@img/services-ico/services-ico-sprite.svg#services-ico-${i+1}`)
-								.services__item-title= item
-				.container__bottom.services__bottom
-					.container__bottom-title Learn more about our services
-					a.container__bottom-link-button(href="#") View services
-		.projects
-			.projects__container
-				.projects__title.container-title.container-title--left Browse our selected projects and learn more about our work
-				.projects__slider-box
-					.projects__slider.swiper-projects
-						.projects__wrapper.swiper-wrapper
-							each item, i in ["Cubes Building","Red Finger Building","The Pencil Building","Red Finger Building","The Pencil Building"]
-								.projects__slide.swiper-slide-projects.swiper-slide
-									.projects__slide-body
-										.projects__slide-wrapper
-											.projects__slide-img-container 
-												img(src=["@img/projects-slider/projects-1.jpg","@img/projects-slider/projects-2.jpg","@img/projects-slider/projects-3.jpg","@img/projects-slider/projects-2.jpg","@img/projects-slider/projects-3.jpg"][i], alt="projects")
-											.projects__slide-content
-												.projects__slide-text-wrapper
-													.projects__slide-title= item
-													.projects__slide-sub-title= ["Business Centers","Business Centers","Stores & Malls","Business Centers","Stores & Malls"][i]
-												.projects__slide-button
-													button(type=button) View Project
-					button.swiper-button-prev-projects(type="button")
+			main.page
+				.hero
+					button.swiper-button-prev(type="button")
 						svg
 							use(xlink:href="@img/arrow-slider.svg#arrow-slider")
-					button.swiper-button-next-projects(type="button")
+					button.swiper-button-next(type="button")
 						svg
 							use(xlink:href="@img/arrow-slider.svg#arrow-slider")
-				.container__bottom.projects__bottom
-					.container__bottom-title Explore all our works
-					a.container__bottom-link-button(href="#") View portfolio
-		.partners
-			.partners__container
-				h2.container-title.partners__title Supported by 12+ partners
-				.partners__slider.swiper-partners
-					.partners__wrapper.swiper-wrapper
-						.partners__slide.swiper-slide
-							.partners__img-wrapper
-								img.partners__logo-img(src="@img/partners-logos/Franklin-Companies_25-Years1.svg" alt="partners-logo")
-						.partners__slide.swiper-slide
-							.partners__img-wrapper
-								img.partners__logo-img(src="@img/partners-logos/Logo_30_Aniversario.png" alt="partners-logo")
-						.partners__slide.swiper-slide
-							.partners__img-wrapper
-								img.partners__logo-img(src="@img/partners-logos/Nersma+-26+Partners+Mix-CMYK-1920w.webp" alt="partners-logo")
-						.partners__slide.swiper-slide
-							.partners__img-wrapper
-								img.partners__logo-img(src="@img/partners-logos/Prospera_Logo_Dark-300x152.png" alt="partners-logo")
-						.partners__slide.swiper-slide
-							.partners__img-wrapper
-								img.partners__logo-img(src="@img/partners-logos/Rockwood-Capital.svg" alt="partners-logo")
-						.partners__slide.swiper-slide
-							.partners__img-wrapper
-								img.partners__logo-img(src="@img/partners-logos/SAHA-Logo.png" alt="partners-logo")
-						.partners__slide.swiper-slide
-							.partners__img-wrapper
-								img.partners__logo-img.partners__logo-img--bg(src="@img/partners-logos/acgroup-logo-white.svg" alt="partners-logo")
-						.partners__slide.swiper-slide
-							.partners__img-wrapper
-								img.partners__logo-img(src="@img/partners-logos/cpi-logo.png" alt="partners-logo")
-						.partners__slide.swiper-slide
-							.partners__img-wrapper
-								img.partners__logo-img(src="@img/partners-logos/elpasohalogo.png" alt="partners-logo")
-						.partners__slide.swiper-slide
-							.partners__img-wrapper
-								img.partners__logo-img(src="@img/partners-logos/hilti.svg" alt="partners-logo")
-						.partners__slide.swiper-slide
-							.partners__img-wrapper
-								img.partners__logo-img.partners__logo-img--bg(src="@img/partners-logos/saunders_white.svg" alt="partners-logo")
-						//- "@img/partners-logos/Franklin-Companies_25-Years1.svg", "@img/partners-logos/Logo_30_Aniversario.png", "@img/partners-logos/Nersma+-26+Partners+Mix-CMYK-1920w.webp", "@img/partners-logos/Prospera_Logo_Dark-300x152.png", "@img/partners-logos/Rockwood-Capital.svg", "@img/partners-logos/SAHA-Logo.png", "@img/partners-logos/acgroup-logo-white.svg", "@img/partners-logos/cpi-logo.png", "@img/partners-logos/elpasohalogo.png", "@img/partners-logos/hilti.svg", "@img/partners-logos/saunders_white.svg"
-				.partners__feedback
-					.partners__feedback-body
-						.partners__feedback-title What our clients are saying
-						.partners__feedback-slider.swiper-feedback
-							.partners__feedback-wrapper.swiper-wrapper
-								.partners__feedback-slide.swiper-slide
-									.partners__feedback-ava 
-										img(src="@img/ava/ava-1.jpg" alt="avatar")
-									.partners__feedback-text Ipsum aute sunt aliquip aute et occaecat. Anim minim do cillum eiusmod enim. Consectetur magna cillum consequat minim  laboris cillum laboris voluptate minim proident exercitation ullamco. 
-									.partners__feedback-name Shawn Edwards
-									.partners__feedback-position Position, Company name
-								.partners__feedback-slide.swiper-slide
-									.partners__feedback-ava 
-										img(src="@img/ava/ava-2.jpg" alt="avatar")
-									.partners__feedback-text Ipsum aute sunt aliquip aute et occaecat. 
-									.partners__feedback-name Shawn Edwards
-									.partners__feedback-position Position, Company name
-								.partners__feedback-slide.swiper-slide
-									.partners__feedback-ava 
-										img(src="@img/ava/ava-3	.jpg" alt="avatar")
-									.partners__feedback-text Ipsum aute sunt aliquip aute voluptate minim proident exercitation ullamco. 
-									.partners__feedback-name Shawn Edwards
-									.partners__feedback-position Position, Company name
-							button.swiper-button-prev-feedback(type="button")
+					.hero__slider.swiper
+						.hero__wrapper.swiper-wrapper-hero.swiper-wrapper
+							.hero__slide.swiper-slide
+								img.hero__img-bg(src="@img/hero-slider/hero-slider-bg-1.jpg" alt="hero slide")
+								.hero__container
+									.hero__title CREATE<span>X</span> CONSTRUCTION
+									.hero__sub-title Cras ultrices leo vitae non viverra. Fringilla nisi quisque consequat, dignissim vitae proin ipsum sed. Pellentesque nec turpis purus eget pellentesque integer ipsum elementum felis.
+									.hero__buttons
+										button.hero__button.hero__button-lite(type="button") Learn more about us
+										button.hero__button(type="button") SUBMIT REQUEST
+							.hero__slide.swiper-slide
+								img.hero__img-bg(src="@img/hero-slider/hero-slider-bg-1.jpg" alt="hero slide")
+								.hero__container
+									.hero__title CREATE<span>X</span> CONSTRUCTION
+									.hero__sub-title Cras ultrices leo vitae non viverra. Fringilla nisi quisque consequat, dignissim vitae proin ipsum sed. Pellentesque nec turpis purus eget pellentesque integer ipsum elementum felis.
+									.hero__buttons
+										button.hero__button.hero__button-lite(type="button") Learn more about us
+										button.hero__button(type="button") SUBMIT REQUEST
+							.hero__slide.swiper-slide
+								img.hero__img-bg(src="@img/hero-slider/hero-slider-bg-1.jpg" alt="hero slide")
+								.hero__container
+									.hero__title CREATE<span>X</span> CONSTRUCTION
+									.hero__sub-title Cras ultrices leo vitae non viverra. Fringilla nisi quisque consequat, dignissim vitae proin ipsum sed. Pellentesque nec turpis purus eget pellentesque integer ipsum elementum felis.
+									.hero__buttons
+										button.hero__button.hero__button-lite(type="button") Learn more about us
+										button.hero__button(type="button") SUBMIT REQUEST
+					.hero__container
+						.swiper-pagination
+				.weare
+					.weare__container
+						.container-title.weare__title We are Createx Construction Bureau 
+						.container-sub-title.weare__sub-title We are rightfully considered to be the best construction company in the USA.
+						.weare__video
+							img(src="https://s3-alpha-sig.figma.com/img/8f04/ba49/daf57a9a1ed5a34de19c0db9e25505c6?Expires=1691971200&Signature=NUn5yiNeKDKJLtFb6KMlljZ~PP5Xi0a2odJEBrK~ry6xwZiMry7f4bRffrYc0YP6UeRFmbfqcCRkgdcxpbVfIQpe-T0~mNb4C~CzTFrdYDxecs2kgcS6w3cnqnmCWrXrMisoFVwj~VnTye8m5eNqwHJ2lqbyU86cV3T2A0EDdUw2FRJgOE7RtY~YY~eCcYvGvyPK79UJer5JQs86zW1OZL9lfXh28rZgrcHTd555ULeNHviXglYSNGqhtg7nxijcKf2D8Fy-CkcCGNnbBgs0nk8pX-xywHYcvrs7XRa98jBq1jdQRMSrjNnevu~04jL5usVN1pWsghRbdSbJh0OZhQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4")
+				.values
+					.values__container
+						h2.container-title.values__title Our core values
+						h3.container-sub-title.values__sub-title Our mission is to set the highest standards for construction sphere.
+						.values__body
+							each item, i in ["1", "2", "3"]
+								.values__item
+									img.values__ico(src=["@img/values-ico-1.svg","@img/values-ico-2.svg","@img/values-ico-3.svg",][i])
+									h3.values__title-item= ["Quality","Safety","Comfort"][i]
+									p.values__text-item= ["Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt.","Anim reprehenderit sint voluptate exercitation adipisicing laborum adipisicing. Minim empor est ea.","Sit veniam aute dolore adipisicing nulla sit culpa. Minim mollit voluptate ullamco proident ea ad."][i]
+					.values__container--wrapper-form
+						h3.ineer-title.values__inner-title Want to know more? Ask us a question:
+						form.values__form
+							.values__item-form
+								label.values__label Name
+								input.values__input(type=text, placeholder="Your name")
+							.values__item-form
+								label.values__label Phone
+								input.values__input(type=tel, placeholder="Your phone")
+							.values__item-form
+								label.values__label Message
+								input.values__input(type=message, placeholder="Your message")
+							.values__item-form
+								button.values__button(type="submit") Send
+				.services
+					.services__container
+						h2.container-title.services__title Our services
+						h3.container-sub-title.services__sub-title Createx Construction Bureau is a construction giant with a full range of construction services.
+						.services__wrapper
+							each item, i in ["Construction","Project Development","Interior Design","Repairs"]
+								.services__item
+									.services__item-body
+										.services__item-ico
+											svg
+												use(xlink:href=`@img/services-ico/services-ico-sprite.svg#services-ico-${i+1}`)
+										.services__item-title= item
+						.container__bottom.services__bottom
+							.container__bottom-title Learn more about our services
+							a.container__bottom-link-button(href="#") View services
+				.projects
+					.projects__container
+						.projects__title.container-title.container-title--left Browse our selected projects and learn more about our work
+						.projects__slider-box
+							.projects__slider.swiper-projects
+								.projects__wrapper.swiper-wrapper
+									each item, i in ["Cubes Building","Red Finger Building","The Pencil Building","Red Finger Building","The Pencil Building"]
+										.projects__slide.swiper-slide-projects.swiper-slide
+											.projects__slide-body
+												.projects__slide-wrapper
+													.projects__slide-img-container 
+														img(src=["@img/projects-slider/projects-1.jpg","@img/projects-slider/projects-2.jpg","@img/projects-slider/projects-3.jpg","@img/projects-slider/projects-2.jpg","@img/projects-slider/projects-3.jpg"][i], alt="projects")
+													.projects__slide-content
+														.projects__slide-text-wrapper
+															.projects__slide-title= item
+															.projects__slide-sub-title= ["Business Centers","Business Centers","Stores & Malls","Business Centers","Stores & Malls"][i]
+														.projects__slide-button
+															button(type=button) View Project
+							button.swiper-button-prev-projects(type="button")
 								svg
 									use(xlink:href="@img/arrow-slider.svg#arrow-slider")
-							button.swiper-button-next-feedback(type="button")
+							button.swiper-button-next-projects(type="button")
 								svg
 									use(xlink:href="@img/arrow-slider.svg#arrow-slider")
-					.partners__feedback-img
-						img(src="@img/feedback-bg.jpg" alt="feedback photo")
-		.facts
-			.facts__container
-				h2.container-title.facts__title Some facts and figures
-				.progress-wrapper
-					//-цвет задается в js коде
-					.item-progress
-						.circular-progress.circular-progress-1
-							span.progress-value#progress-value-id1 0
-						span.text Totally satisfied clients
-					.item-progress
-						.circular-progress.circular-progress-2
-							span.progress-value#progress-value-id2 0
-						span.text Years of experience
-					.item-progress
-						.circular-progress.circular-progress-3
-							span.progress-value#progress-value-id3 0
-						span.text Working hours spent
-					.item-progress
-						.circular-progress.circular-progress-4
-							span.progress-value#progress-value-id4 0
-						span.text Succeeded projects
-		.news
-			.news__container
-				h2.container-title.news__title Recent news
-				.news__wrapper
-					.news__item-main
-						a.news__img-outer(href="#")
-							.news__item-main-img-ibg
-								img(src="@img/news/news-big.jpg", alt="news")
-							.news__item-title How to Build Climate Change-Resilient Infrastructure
-						.news__item-info
-							a.news__item-tag(href="#") Industry News
-							a.news__item-date(href="#") June 24, 2020
-							a.news__item-comments(href="#") 4 comments
-						.news__item-text Ipsum aliquet nisi, hendrerit rhoncus quam tortor, maecenas faucibus. Tincidunt aliquet sit vel, venenatis nulla. Integer bibendum turpis convallis enim, nibh convallis...
-					.news__item
-						a.news__img-outer(href="#")
-							.news__item-img-ibg(href="#")
-								img(src="@img/news/news-1.jpg", alt="news")
-							.news__item-title How Construction Can Help Itself
-						.news__item-info
-							a.news__item-tag(href="#") Innovation
-							a.news__item-date(href="#") June 12, 2020
-							a.news__item-comments(href="#") No comments
-						.news__item-text Ipsum aliquet nisi, hendrerit rhoncus quam tortor, maecenas faucibus. Tincidunt aliquet sit vel, venenatis nulla. Integer bibendum turpis convallis enim, nibh convallis...
-					.news__item
-						a.news__img-outer(href="#")
-							.news__item-img-ibg(href="#")
-								img(src="@img/news/news-2.jpg", alt="news")
-							.news__item-title Types of Flooring Materials
-						.news__item-info
-							a.news__item-tag(href="#") Company News
-							a.news__item-date(href="#") December 1, 2019
-							a.news__item-comments(href="#") No comments
-						.news__item-text Ipsum aliquet nisi, hendrerit rhoncus quam tortor, maecenas faucibus. Tincidunt aliquet sit vel, venenatis nulla. Integer bibendum turpis convallis enim, nibh convallis...
-				.container__bottom.news__bottom
-					.container__bottom-title Explore all our news posts
-					a.container__bottom-link-button(href="#") View all news
-		.footer-form
-			.footer-form__container
-				.form__wrapper 
-					.form__title A quick way to discuss details
-					form.form(action="#")
-						.form__field
-							label.form__label(for="name") Name*
-							input.form__input(type="text",required, placeholder="Your name", name="name", id="name", autocomplete="off")
-						.form__field
-							label.form__label(for="phone") Phone*
-							input.form__input(type="tel",required, placeholder="Your phone number", name="phone", id="phone")
-						.form__field
-							label.form__label(for="email") Email
-							input.form__input(type="email",required, placeholder="Your working email", name="email", id="email")
-						.form__field
-							label.form__label(for="name") Message*
-							textarea.form__textarea(placeholder="Your message", name="text", id="text")
-						//- input.form__input(type="text", placeholder="Your surname", name="surname", id="surname", disabled)
-						//- input.form__input(type="password", placeholder="Your password", name="password", id="password")
-						//- input.form__input(type="range", placeholder="Your range", name="range", id="range")
-						//- input.form__input(type="file", multiple, accept=".jpg, .png", name="file", id="file")
-						//- input.form__input(type="radio", name="gender", id="gender", value="off")
-						//- span M
-						//- input.form__input(type="radio", name="gender", id="gender", value="off", checked)
-						//- span W
-						//- textarea.form__textarea(name="text") Text
-						//- select(name="select", multiple)
-						//- 	option(value="1") 1
-						//- 	option(value="2") 2
-						//- 	option(value="3", selected) 3
-						//- 	option(value="4") 4
-						.form__field
-							.form__checkbox-wrapper
-								input.form__checkbox(type="checkbox", name="check", id="check", value="off")
-								label.form__checkbox-label(for="check") I agree to receive communications from Createx Construction Bureau.
-						button.form__button(type="submit") send request
-	footer.footer
-		.footer__container
-			.footer__row.footer__row--top
-				.footer__left
-					.footer__logo-wrapper
-						a.footer__logo(href="/")
-							img(src="@img/logo-light.svg", alt="logo")
-						ul.footer__social
-							li.footer__social-item
-								a.footer__social-link(href="#")
-									img(src="@img/social-icons/whatsapp.svg", alt="whatsapp")
-							li.footer__social-item
-								a.footer__social-link(href="#")
-									img(src="@img/social-icons/messanger.svg", alt="messanger")
-							li.footer__social-item
-								a.footer__social-link(href="#")
-									img(src="@img/social-icons/facebook.svg", alt="facebook")
-							li.footer__social-item
-								a.footer__social-link(href="#")
-									img(src="@img/social-icons/twitter.svg", alt="twitter")
-							li.footer__social-item
-								a.footer__social-link(href="#")
-									img(src="@img/social-icons/youtube.svg", alt="youtube")
-					.footer__text Createx Construction Bureau has been successfully operating in the USA construction market since 2000. We are proud to offer you quality construction and exemplary service. Our mission is to set the highest standards for construction sphere.
-					
-					
-				.footer__right
-					h2.footer__title-subscribe Let’s stay in touch
-					form.footer__form-subscribe(action="#")
-						input.footer__input-subscribe(type="email", placeholder="Your email address ")
-						button.footer__button-subscribe(type="submit") subscribe
-					p.footer__desc-subscribe *Subscribe to our newsletter to receive communications and early updates from Createx Construction Bureau.
-					
-			.footer__row.footer__row--middle
-				.footer__left
-					.footer__title HEAD OFFICE
-					ul.footer__list
-						li.footer__item
-							strong Address:
-							a.footer__link(href="#") 8502 Preston Rd. Inglewood, New York
-						li.footer__item
-							strong Call:
-							a.footer__link(href="tel:4055550128") (405) 555-0128
-						li.footer__item
-							strong Email:
-							a.footer__link(href="mailto:hello@createx.com") hello@createx.com
-				.footer__middle
-					.footer__title WHO WE ARE
-					ul.footer__list
-						li.footer__item
-							a.footer__link(href="#") About Us
-						li.footer__item
-							a.footer__link(href="#") Available Positions
-						li.footer__item
-							a.footer__link(href="#") Contacts
-				.footer__right
-					.footer__title OUR EXPERIENCE
-					ul.footer__list
-						li.footer__item
-							a.footer__link(href="#") Services
-						li.footer__item
-							a.footer__link(href="#") Work
-						li.footer__item
-							a.footer__link(href="#") News
-			.footer__row.footer__row--bottom
-				.footer__left.footer__copy-wrapper
-					.footer__copy © All rights reserved.
-				.footer__right
-					.footer__go-to-top GO TO TOP
-						a.footer__go-to-top-link
-							img(src="@img/go-to-top.svg")
-.pixelperfect
+						.container__bottom.projects__bottom
+							.container__bottom-title Explore all our works
+							a.container__bottom-link-button(href="#") View portfolio
+				.partners
+					.partners__container
+						h2.container-title.partners__title Supported by 12+ partners
+						.partners__slider.swiper-partners
+							.partners__wrapper.swiper-wrapper
+								.partners__slide.swiper-slide
+									.partners__img-wrapper
+										img.partners__logo-img(src="@img/partners-logos/Franklin-Companies_25-Years1.svg" alt="partners-logo")
+								.partners__slide.swiper-slide
+									.partners__img-wrapper
+										img.partners__logo-img(src="@img/partners-logos/Logo_30_Aniversario.png" alt="partners-logo")
+								.partners__slide.swiper-slide
+									.partners__img-wrapper
+										img.partners__logo-img(src="@img/partners-logos/Nersma+-26+Partners+Mix-CMYK-1920w.webp" alt="partners-logo")
+								.partners__slide.swiper-slide
+									.partners__img-wrapper
+										img.partners__logo-img(src="@img/partners-logos/Prospera_Logo_Dark-300x152.png" alt="partners-logo")
+								.partners__slide.swiper-slide
+									.partners__img-wrapper
+										img.partners__logo-img(src="@img/partners-logos/Rockwood-Capital.svg" alt="partners-logo")
+								.partners__slide.swiper-slide
+									.partners__img-wrapper
+										img.partners__logo-img(src="@img/partners-logos/SAHA-Logo.png" alt="partners-logo")
+								.partners__slide.swiper-slide
+									.partners__img-wrapper
+										img.partners__logo-img.partners__logo-img--bg(src="@img/partners-logos/acgroup-logo-white.svg" alt="partners-logo")
+								.partners__slide.swiper-slide
+									.partners__img-wrapper
+										img.partners__logo-img(src="@img/partners-logos/cpi-logo.png" alt="partners-logo")
+								.partners__slide.swiper-slide
+									.partners__img-wrapper
+										img.partners__logo-img(src="@img/partners-logos/elpasohalogo.png" alt="partners-logo")
+								.partners__slide.swiper-slide
+									.partners__img-wrapper
+										img.partners__logo-img(src="@img/partners-logos/hilti.svg" alt="partners-logo")
+								.partners__slide.swiper-slide
+									.partners__img-wrapper
+										img.partners__logo-img.partners__logo-img--bg(src="@img/partners-logos/saunders_white.svg" alt="partners-logo")
+								//- "@img/partners-logos/Franklin-Companies_25-Years1.svg", "@img/partners-logos/Logo_30_Aniversario.png", "@img/partners-logos/Nersma+-26+Partners+Mix-CMYK-1920w.webp", "@img/partners-logos/Prospera_Logo_Dark-300x152.png", "@img/partners-logos/Rockwood-Capital.svg", "@img/partners-logos/SAHA-Logo.png", "@img/partners-logos/acgroup-logo-white.svg", "@img/partners-logos/cpi-logo.png", "@img/partners-logos/elpasohalogo.png", "@img/partners-logos/hilti.svg", "@img/partners-logos/saunders_white.svg"
+						.partners__feedback
+							.partners__feedback-body
+								.partners__feedback-title What our clients are saying
+								.partners__feedback-slider.swiper-feedback
+									.partners__feedback-wrapper.swiper-wrapper
+										.partners__feedback-slide.swiper-slide
+											.partners__feedback-ava 
+												img(src="@img/ava/ava-1.jpg" alt="avatar")
+											.partners__feedback-text Ipsum aute sunt aliquip aute et occaecat. Anim minim do cillum eiusmod enim. Consectetur magna cillum consequat minim  laboris cillum laboris voluptate minim proident exercitation ullamco. 
+											.partners__feedback-name Shawn Edwards
+											.partners__feedback-position Position, Company name
+										.partners__feedback-slide.swiper-slide
+											.partners__feedback-ava 
+												img(src="@img/ava/ava-2.jpg" alt="avatar")
+											.partners__feedback-text Ipsum aute sunt aliquip aute et occaecat. 
+											.partners__feedback-name Shawn Edwards
+											.partners__feedback-position Position, Company name
+										.partners__feedback-slide.swiper-slide
+											.partners__feedback-ava 
+												img(src="@img/ava/ava-3	.jpg" alt="avatar")
+											.partners__feedback-text Ipsum aute sunt aliquip aute voluptate minim proident exercitation ullamco. 
+											.partners__feedback-name Shawn Edwards
+											.partners__feedback-position Position, Company name
+									button.swiper-button-prev-feedback(type="button")
+										svg
+											use(xlink:href="@img/arrow-slider.svg#arrow-slider")
+									button.swiper-button-next-feedback(type="button")
+										svg
+											use(xlink:href="@img/arrow-slider.svg#arrow-slider")
+							.partners__feedback-img
+								img(src="@img/feedback-bg.jpg" alt="feedback photo")
+				.facts
+					.facts__container
+						h2.container-title.facts__title Some facts and figures
+						.progress-wrapper
+							//-цвет задается в js коде
+							.item-progress
+								.circular-progress.circular-progress-1
+									span.progress-value#progress-value-id1 0
+								span.text Totally satisfied clients
+							.item-progress
+								.circular-progress.circular-progress-2
+									span.progress-value#progress-value-id2 0
+								span.text Years of experience
+							.item-progress
+								.circular-progress.circular-progress-3
+									span.progress-value#progress-value-id3 0
+								span.text Working hours spent
+							.item-progress
+								.circular-progress.circular-progress-4
+									span.progress-value#progress-value-id4 0
+								span.text Succeeded projects
+				.news
+					.news__container
+						h2.container-title.news__title Recent news
+						.news__wrapper
+							.news__item-main
+								a.news__img-outer(href="#")
+									.news__item-main-img-ibg
+										img(src="@img/news/news-big.jpg" alt="news")
+									.news__item-title How to Build Climate Change-Resilient Infrastructure
+								.news__item-info
+									a.news__item-tag(href="#") Industry News
+									a.news__item-date(href="#") June 24, 2020
+									a.news__item-comments(href="#") 4 comments
+								.news__item-text Ipsum aliquet nisi, hendrerit rhoncus quam tortor, maecenas faucibus. Tincidunt aliquet sit vel, venenatis nulla. Integer bibendum turpis convallis enim, nibh convallis...
+							.news__item
+								a.news__img-outer(href="#")
+									.news__item-img-ibg(href="#")
+										img(src="@img/news/news-1.jpg" alt="news")
+									.news__item-title How Construction Can Help Itself
+								.news__item-info
+									a.news__item-tag(href="#") Innovation
+									a.news__item-date(href="#") June 12, 2020
+									a.news__item-comments(href="#") No comments
+								.news__item-text Ipsum aliquet nisi, hendrerit rhoncus quam tortor, maecenas faucibus. Tincidunt aliquet sit vel, venenatis nulla. Integer bibendum turpis convallis enim, nibh convallis...
+							.news__item
+								a.news__img-outer(href="#")
+									.news__item-img-ibg(href="#")
+										img(src="@img/news/news-2.jpg" alt="news")
+									.news__item-title Types of Flooring Materials
+								.news__item-info
+									a.news__item-tag(href="#") Company News
+									a.news__item-date(href="#") December 1, 2019
+									a.news__item-comments(href="#") No comments
+								.news__item-text Ipsum aliquet nisi, hendrerit rhoncus quam tortor, maecenas faucibus. Tincidunt aliquet sit vel, venenatis nulla. Integer bibendum turpis convallis enim, nibh convallis...
+						.container__bottom.news__bottom
+							.container__bottom-title Explore all our news posts
+							a.container__bottom-link-button(href="#") View all news
+				.footer-form
+					.footer-form__container
+						.form__wrapper 
+							.form__title A quick way to discuss details
+							form.form(action="#")
+								.form__field
+									label.form__label(for="name") Name*
+									input.form__input(type="text",required, placeholder="Your name" name="name" id="name" autocomplete="off")
+								.form__field
+									label.form__label(for="phone") Phone*
+									input.form__input(type="tel",required, placeholder="Your phone number" name="phone" id="phone")
+								.form__field
+									label.form__label(for="email") Email
+									input.form__input(type="email",required, placeholder="Your working email" name="email" id="email")
+								.form__field
+									label.form__label(for="name") Message*
+									textarea.form__textarea(placeholder="Your message" name="text" id="text")
+								//- input.form__input(type="text" placeholder="Your surname" name="surname" id="surname", disabled)
+								//- input.form__input(type="password" placeholder="Your password" name="password" id="password")
+								//- input.form__input(type="range" placeholder="Your range" name="range" id="range")
+								//- input.form__input(type="file", multiple, accept=".jpg, .png" name="file" id="file")
+								//- input.form__input(type="radio" name="gender" id="gender" value="off")
+								//- span M
+								//- input.form__input(type="radio" name="gender" id="gender" value="off", checked)
+								//- span W
+								//- textarea.form__textarea(name="text") Text
+								//- select(name="select", multiple)
+								//- 	option(value="1") 1
+								//- 	option(value="2") 2
+								//- 	option(value="3", selected) 3
+								//- 	option(value="4") 4
+								.form__field
+									.form__checkbox-wrapper
+										input.form__checkbox(type="checkbox" name="check" id="check" value="off")
+										label.form__checkbox-label(for="check") I agree to receive communications from Createx Construction Bureau.
+								button.form__button(type="submit") send request
+			footer.footer
+				.footer__container
+					.footer__row.footer__row--top
+						.footer__left
+							.footer__logo-wrapper
+								a.footer__logo(href="/")
+									img(src="@img/logo-light.svg" alt="logo")
+								ul.footer__social
+									li.footer__social-item
+										a.footer__social-link(href="#")
+											img(src="@img/social-icons/whatsapp.svg" alt="whatsapp")
+									li.footer__social-item
+										a.footer__social-link(href="#")
+											img(src="@img/social-icons/messanger.svg" alt="messanger")
+									li.footer__social-item
+										a.footer__social-link(href="#")
+											img(src="@img/social-icons/facebook.svg" alt="facebook")
+									li.footer__social-item
+										a.footer__social-link(href="#")
+											img(src="@img/social-icons/twitter.svg" alt="twitter")
+									li.footer__social-item
+										a.footer__social-link(href="#")
+											img(src="@img/social-icons/youtube.svg" alt="youtube")
+							.footer__text Createx Construction Bureau has been successfully operating in the USA construction market since 2000. We are proud to offer you quality construction and exemplary service. Our mission is to set the highest standards for construction sphere.
+
+
+						.footer__right
+							h2.footer__title-subscribe Let’s stay in touch
+							form.footer__form-subscribe(action="#")
+								input.footer__input-subscribe(type="email" placeholder="Your email address ")
+								button.footer__button-subscribe(type="submit") subscribe
+							p.footer__desc-subscribe *Subscribe to our newsletter to receive communications and early updates from Createx Construction Bureau.
+
+					.footer__row.footer__row--middle
+						.footer__left
+							.footer__title HEAD OFFICE
+							ul.footer__list
+								li.footer__item
+									strong Address:
+									a.footer__link(href="#") 8502 Preston Rd. Inglewood, New York
+								li.footer__item
+									strong Call:
+									a.footer__link(href="tel:4055550128") (405) 555-0128
+								li.footer__item
+									strong Email:
+									a.footer__link(href="mailto:hello@createx.com") hello@createx.com
+						.footer__middle
+							.footer__title WHO WE ARE
+							ul.footer__list
+								li.footer__item
+									a.footer__link(href="#") About Us
+								li.footer__item
+									a.footer__link(href="#") Available Positions
+								li.footer__item
+									a.footer__link(href="#") Contacts
+						.footer__right
+							.footer__title OUR EXPERIENCE
+							ul.footer__list
+								li.footer__item
+									a.footer__link(href="#") Services
+								li.footer__item
+									a.footer__link(href="#") Work
+								li.footer__item
+									a.footer__link(href="#") News
+					.footer__row.footer__row--bottom
+						.footer__left.footer__copy-wrapper
+							.footer__copy © All rights reserved.
+						.footer__right
+							.footer__go-to-top GO TO TOP
+								a.footer__go-to-top-link
+									img(src="@img/go-to-top.svg")
+		.pixelperfect
 
